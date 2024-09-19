@@ -9,15 +9,6 @@ function scrollToSection(sectionId) {
     }
 }
 
-    const toggleButton = document.getElementById('theme-toggle');
-    const body = document.body;
-
-    // Check if there's a saved theme in local storage
-    const savedTheme = localStorage.getItem('theme');
-    if (savedTheme) {
-        body.classList.add(savedTheme);
-        toggleButton.textContent = savedTheme === 'dark-mode' ? 'Switch to Light Mode' : 'Switch to Dark Mode';
-    }
 
     toggleButton.addEventListener('click', function () {
         if (body.classList.contains('dark-mode')) {
