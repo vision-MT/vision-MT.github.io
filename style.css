@@ -72,6 +72,8 @@ footer a {
     position: absolute;
     top: 10px;
     right: 10px;
+    display: flex;
+    gap: 10px;
 }
 
 .language-switcher img {
